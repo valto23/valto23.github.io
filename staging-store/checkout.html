@@ -1,6 +1,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <title>Store Name - Test Store</title>
+    <title>Store Name - Checkout</title>
     <script type="text/javascript" src="/js/store.js"></script>
     <script type="text/javascript">
     //<![CDATA[
@@ -41,12 +41,21 @@
   <div id="content">
   
 <div id="content">
-<div id="banner"></div>
-<div class="nosto_element" id="other-nosto-1"></div>
-<div class="nosto_element" id="other-nosto-2"></div>
-<div class="nosto_element" id="frontpage-nosto-1"></div>
-<div class="nosto_element" id="frontpage-nosto-2"></div>
-<div class="nosto_element" id="frontpage-nosto-3"></div>
+<h2>Checkout</h2>
+<h3 id="orderStatus"></h3>
+<div class="nosto_purchase_order" style="display:none">
+  <span class="order_number"></span>
+  <div class="buyer">
+    <span class="email"></span>
+    <span class="first_name"></span>
+    <span class="last_name"></span>
+  </div>
+  <div class="purchased_items">
+  </div>
+</div>
+<script type="text/javascript">
+  store.processOrder();
+</script>
 
 </div>
 

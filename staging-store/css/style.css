@@ -1,0 +1,189 @@
+/* line 3, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+body {
+  font-family: sans-serif; }
+
+/* line 7, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+a {
+  color: #1A237E;
+  text-decoration: none;
+  transition: color 300ms ease-out; }
+  /* line 11, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  a:hover {
+    color: #E65100; }
+
+/* line 16, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+h1 {
+  color: #3F51B5; }
+
+/* line 20, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+h2 {
+  color: #1A237E; }
+
+/* line 24, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+h3 {
+  color: #1A237E; }
+
+/* line 28, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+button {
+  color: white;
+  background-color: #1A237E;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  transition: background-color 300ms ease-out;
+  transition: box-shadow 300ms ease-out;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  /* line 38, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  button:hover {
+    background-color: #212ca0;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  /* line 42, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  button:focus {
+    outline: 0; }
+  /* line 45, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  button:active {
+    background-color: #E65100; }
+
+/* line 51, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+#top div.menu {
+  width: 100%;
+  background-color: #C5CAE9; }
+  /* line 54, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  #top div.menu ul {
+    padding: 0;
+    display: inline-block;
+    margin: 0; }
+  /* line 59, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  #top div.menu li {
+    transition: background-color 300ms ease-out;
+    display: inline-block;
+    padding: 0.5em 1em; }
+    /* line 63, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    #top div.menu li:hover {
+      background-color: #eaecf7; }
+  /* line 67, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  #top div.menu div.cartSummary {
+    transition: background-color 300ms ease-out;
+    float: right;
+    padding: 0.5em 1em; }
+    /* line 71, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    #top div.menu div.cartSummary:hover {
+      background-color: #eaecf7; }
+  /* line 75, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  #top div.menu div.search {
+    display: inline-block;
+    float: right;
+    padding: 0.4em 2em 0 0; }
+    /* line 79, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    #top div.menu div.search form {
+      margin: 0; }
+    /* line 82, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    #top div.menu div.search input {
+      padding: 0.2em;
+      width: 10em; }
+    /* line 86, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    #top div.menu div.search button {
+      padding: 0.2em;
+      font-size: 0.8em; }
+
+/* line 94, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+#content {
+  width: 900px;
+  margin: auto; }
+
+/* line 99, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+.discountedPrice {
+  text-decoration: line-through;
+  color: red; }
+
+/* line 105, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+ul.gallery {
+  padding: 0; }
+  /* line 107, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  ul.gallery li {
+    display: inline-block;
+    padding: 0.5 1em;
+    margin: 5px;
+    width: 138px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    /* line 115, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    ul.gallery li:hover {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    /* line 118, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    ul.gallery li a {
+      text-decoration: none; }
+    /* line 121, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    ul.gallery li img {
+      width: 100px; }
+
+/* line 127, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+div.nosto_element {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  /* line 129, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  div.nosto_element h2 {
+    padding: 0.5em 1em;
+    margin: 0.5em 0 0 0; }
+  /* line 133, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  div.nosto_element ul.slot {
+    padding: 0 1em 0.5em 1em;
+    margin: 0; }
+    /* line 136, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    div.nosto_element ul.slot li {
+      display: inline-block;
+      padding: 0.1em 0.2em;
+      margin: 1px;
+      width: 95px;
+      text-align: center;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+      /* line 144, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+      div.nosto_element ul.slot li:hover {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      /* line 148, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+      div.nosto_element ul.slot li a {
+        text-decoration: none; }
+      /* line 151, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+      div.nosto_element ul.slot li img {
+        width: 95px; }
+
+/* line 160, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+.product .photo {
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  /* line 164, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  .product .photo img {
+    width: 300px; }
+
+/* line 168, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+.product .details {
+  vertical-align: top;
+  width: 570px;
+  padding-left: 20px;
+  display: inline-block; }
+
+/* line 177, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+div#cartDetails {
+  padding: 0 1em 1em 1em; }
+  /* line 179, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+  div#cartDetails ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    /* line 183, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+    div#cartDetails ul li {
+      padding: 0.2em; }
+
+/* line 190, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+label {
+  width: 6em;
+  display: inline-block;
+  padding: 0.5em; }
+
+/* line 195, /Users/vladimirsiutkin/develop/local-store-stg/src/css/style.scss */
+input {
+  padding: 0.5em;
+  width: 20em; }

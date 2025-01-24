@@ -1,0 +1,234 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Store Name - Product 04</title>
+    <script type="text/javascript" src="/js/store.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    (function(){function a(a){var b,c,d=window.document.createElement("iframe");d.src="javascript:false",(d.frameElement||d).style.cssText="width: 0; height: 0; border: 0";var e=window.document.createElement("div");e.style.display="none";var f=window.document.createElement("div");e.appendChild(f),window.document.body.insertBefore(e,window.document.body.firstChild),f.appendChild(d);try{c=d.contentWindow.document}catch(g){b=document.domain,d.src="javascript:var d=document.open();d.domain='"+b+"';void(0);",c=d.contentWindow.document}return c.open()._l=function(){b&&(this.domain=b);var c=this.createElement("scr".concat("ipt"));c.src=a,this.body.appendChild(c)},c.write("<bo".concat('dy onload="document._l();">')),c.close(),d}var b="nostojs";window[b]=window[b]||function(a){(window[b].q=window[b].q||[]).push(a)},window[b].l=new Date;var c=function(d,e){if(!document.body)return setTimeout(function(){c(d,e)},30);e=e||{},window[b].o=e;var f=document.location.protocol,g=["https:"===f?f:"http:","//",e.host||"localhost:9000",e.path||"/include/",d].join("");a(g)};window[b].init=c})();
+    nostojs.init('valto');
+    //]]>
+    </script>
+</head>
+<body>
+  <div id="top">
+    <h1><a href="/">Store Name</a></h1>
+    <div class="menu">
+      <ul>
+        
+        <a href="/categories/category2.html"><li>category2</li></a>
+        
+        <a href="/categories/category1.html"><li>category1</li></a>
+        
+        <a href="/categories/WOMEN.html"><li>WOMEN</li></a>
+        
+        <a href="/categories/women/t-shirts.html"><li>women/t-shirts</li></a>
+        
+      </ul>
+      <a href="/cart.html">
+        <div class="cartSummary">
+          <span>Cart </span>
+          <span id="cartSummary">&nbsp;</span>
+        </div>
+      </a>
+      <div class="search">
+        <form action="/search.html">
+          <input name="q" type="text" />
+          <button type="Submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+  
+<script>
+  function showPopup(id){
+    nostojs(function(api) {
+      console.log("showing popup "+id)
+      console.log(api.popupCampaigns())
+      console.log(api.openPopup(id));
+    });
+  }
+  function showPopupFromList() {
+    nostojs(function(api) {
+      var arrayOfPopupCampaigns = api.popupCampaigns()
+      var popupCampaignId = arrayOfPopupCampaigns[0].id
+      console.log("showing popup " + popupCampaignId)
+      console.log(api.popupCampaigns())
+     // api.enablePopup(popupCampaignId)
+      api.openPopup(popupCampaignId, {preview:true})
+     // api.openPopup(popupCampaignId)
+    });
+  }
+  function customPopup() {
+
+    var content = "<div class=\"nosto_element\" id=\"my-placement-div-id\"></div>\n"
+        + "<script>\n"
+        + "window.opener.nostojs(function(api) {// try without _targetWindow if its undefined\n"
+        + "  var request = api.createRecommendationRequest({ includeTagging: true });\n"
+        + "  request.data.el = [\"my-placement-div-id\"];\n"
+        + "  request.loadRecommendations();\n"
+        + "});\n"
+        + "<\/script>"
+    var myWindow = window.open("", "MsgWindow", "width=800,height=400");
+    myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p> "+content);
+  }
+</script>
+<input id="content">
+  <h2>Product 04</h2>
+  <div class="product">
+    <div class="photo">
+      
+      <img src="/imgs/prod4.jpg" />
+      
+    </div>
+    <div class="details">
+      This is Product 04<br />
+      brand1<br />
+      10.99 EUR
+      
+      <span class="discountedPrice">15.99 EUR</span>
+      <br />
+      <br />
+      
+        <select id="sizeSelect">
+        
+          <option value="s" >small</option>
+        
+          <option value="m" >medium</option>
+        
+          <option value="l" >large</option>
+        
+        </select><br />
+      
+      <button onclick="store.addToCart({id:'product04',quantity:1,name:'Product 04',unit_price:10.99,price_currency_code:'EUR','sku_id':document.getElementById('sizeSelect')?document.getElementById('sizeSelect').value:null})">Add to Cart</button>
+    </div>
+  </div>
+  <div class="nosto_element" id="nosto-product-1"></div>
+  <div class="nosto_element" id="nosto-product-2"></div>
+  <input id="popupid" type="text">5e5e21f0ffd4f271d82b8d94</input>
+<button  onclick="showPopup(document.getElementById('popupid').value)" value="">Show my popup</button>
+
+
+
+
+
+<input type="button" value="show popup from list" onclick="showPopupFromList()"/>
+
+<input type="button" value="custom popup" onclick="customPopup()"/>
+
+<button  onclick="nostojs(function(api){api.addSegmentCodeToVisit('EN')})"> EN </button>
+<button  onclick="nostojs(function(api){api.addSegmentCodeToVisit('DE')})"> DE </button>
+
+</div>
+<div class="nosto_product" style="display:none">
+  <span class="url">http://localstore.com:3000/products/product04.html</span>
+  <span class="product_id">product04</span>
+  <span class="name">Product 04</span>
+  
+  <span class="image_url">http://localstore.com:3000/imgs/prod4.jpg</span>
+  
+  <span class="alternate_image_url">https://vladgryshko.github.io/staging-vlad-store/9-2.webp</span>
+  <span class="price">10.99</span>
+  <span class="price_currency_code">EUR</span>
+  <span class="availability">InStock</span>
+  
+  <span class="category">category2</span>
+  
+  <span class="description">This is Product 04</span>
+  
+  <span class="list_price">15.99</span>
+  
+  <span class="brand">brand1</span>
+  
+  
+  
+
+
+
+  <span class="custom_fields">
+    <span class="name">Product 04</span>
+    <span class="currency">EUR</span>
+      <span class="material">Cotton</span>
+    <span class="weather">Summer</span>
+  </span>
+  
+  <span class="selected_sku_id">s</span>
+  
+
+  
+  <span class="nosto_sku">
+    <span class="id">s</span>
+    <span class="name">small</span>
+    <span class="availability">InStock</span>
+     <span class="price">10.99</span>
+    <span class="list_price">10.99</span>
+    <span class="url">http://localstore.com:3000/products/product04.html?sku=s</span>
+      <span class="image_url">http://localstore.com:3000/imgs/prod4.jpg</span>
+
+    <span class="inventory_level">55</span>
+    <span class="custom_fields">
+      <span class="size">S</span>
+    </span>
+  </span>
+  
+  <span class="nosto_sku">
+    <span class="id">m</span>
+    <span class="name">medium</span>
+    <span class="availability">InStock</span>
+     <span class="price">10.99</span>
+    <span class="list_price">10.99</span>
+    <span class="url">http://localstore.com:3000/products/product04.html?sku=m</span>
+      <span class="image_url">http://localstore.com:3000/imgs/prod4.jpg</span>
+
+    <span class="inventory_level">55</span>
+    <span class="custom_fields">
+      <span class="size">M</span>
+    </span>
+  </span>
+  
+  <span class="nosto_sku">
+    <span class="id">l</span>
+    <span class="name">large</span>
+    <span class="availability">InStock</span>
+     <span class="price">10.99</span>
+    <span class="list_price">10.99</span>
+    <span class="url">http://localstore.com:3000/products/product04.html?sku=l</span>
+      <span class="image_url">http://localstore.com:3000/imgs/prod4.jpg</span>
+
+    <span class="inventory_level">55</span>
+    <span class="custom_fields">
+      <span class="size">L</span>
+    </span>
+  </span>
+  
+  <span class="date_published">2015-09-19</span>
+</div>
+<div class="nosto_page_type" style="display:none">product</div>
+
+
+<div class="nosto_element" id="productpage-nosto-1"></div>
+<div class="nosto_element" id="productpage-nosto-2"></div>
+<div class="nosto_element" id="productpage-nosto-3"></div>
+
+
+
+    <div class="nosto_element" id="pagetemplate-nosto-1"></div>
+    <div class="nosto_element" id="pagetemplate-nosto-2"></div>
+    <div class="nosto_element" id="pagetemplate-nosto-3"></div>
+    <div class="nosto_element" id="pagetemplate-nosto-4"></div>
+  </div>
+  <div class="nosto_cart" style="display:none"></div>
+  <script type="text/javascript">
+    store.updateCartSummary();
+    store.renderNostoCartTagging();
+  </script>
+  <script type="text/javascript">
+  nostojs(function(api){
+    api.listen("postrender", function(postRenderElements){
+      console.log("postRender!!!!");
+      console.log(postRenderElements);
+    });
+  });
+  </script>
+  
+</body>
