@@ -68,7 +68,8 @@ var store=(function(document){
       var firstName = document.getElementById("firstName").value;
       var lastName = document.getElementById("lastName").value;
       var email = document.getElementById("email").value;
-      var order={firstName:firstName,lastName:lastName,email:email};
+      var newsletter = document.getElementById("newsletter").checked;
+      var order={firstName:firstName,lastName:lastName,email:email,newsletter:newsletter};
       document.cookie="order="+JSON.stringify(order)+";path=/";
     },
     processOrder: function(){
@@ -80,6 +81,7 @@ var store=(function(document){
         document.getElementsByClassName("email")[0].appendChild(document.createTextNode(order.email));
         document.getElementsByClassName("first_name")[0].appendChild(document.createTextNode(order.firstName));
         document.getElementsByClassName("last_name")[0].appendChild(document.createTextNode(order.lastName));
+        document.getElementsByClassName("marketing_permission")[0].appendChild(document.createTextNode(order.newsletter));
         document.getElementsByClassName("order_number")[0].appendChild(document.createTextNode(new Date().getTime()));
         createNostoCartElements(cart,document.getElementsByClassName("purchased_items")[0]);
         document.cookie = "cart=;path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
